@@ -40,7 +40,7 @@ const FullinformationProduct = ({
 
   const [ProductAll, setProductAll] = useState([
     {
-      id:0,
+      id: 0,
       Catgories: "Japonais",
       Préférences: "Sushi",
       Address: "azdadz",
@@ -56,7 +56,7 @@ const FullinformationProduct = ({
       price: 50,
     },
     {
-      id:1,
+      id: 1,
       Catgories: "Japonais",
       Address: "azdadz",
       Name: "ramen",
@@ -66,90 +66,105 @@ const FullinformationProduct = ({
       price: 60,
     },
     {
-      id:2,
+      id: 2,
       Catgories: "Japonais",
       Address: "azdadz",
       Name: "mochi ice cream",
-      image:["MoshiIceCream.jpg",
-      "MoshiIceCream.jpg","MoshiIceCream.jpg",
-      "MoshiIceCream.jpg"],
+      image: [
+        "MoshiIceCream.jpg",
+        "MoshiIceCream.jpg",
+        "MoshiIceCream.jpg",
+        "MoshiIceCream.jpg",
+      ],
       TypesDeplat: "Dessert",
       Rate: 4,
       price: 60,
     },
 
     {
-      id:3,
+      id: 3,
       Catgories: "Japonais",
       Address: "azdadz",
       Name: "mochi ice cream",
-      image: ["MoshiIceCream.jpg","MoshiIceCream.jpg","MoshiIceCream.jpg"],
+      image: ["MoshiIceCream.jpg", "MoshiIceCream.jpg", "MoshiIceCream.jpg"],
       TypesDeplat: "Dessert",
       Rate: 5,
       price: 70,
     },
     {
-      id:4,
+      id: 4,
       Catgories: "Japonais",
       Address: "azdadz",
       Name: "japanese ginger pork",
-      image: ["japanesegingerpork.jpg","japanesegingerpork.jpg",
-      "japanesegingerpork.jpg"],
+      image: [
+        "japanesegingerpork.jpg",
+        "japanesegingerpork.jpg",
+        "japanesegingerpork.jpg",
+      ],
       TypesDeplat: "Entrée",
       Rate: 5,
       price: 70,
     },
     // japanesegingerpork01
     {
-      id:5,
+      id: 5,
       Catgories: "Japonais",
       Address: "azdadz",
       Name: "japanese ginger pork",
-      image: ["japanesegingerpork01.jpg","japanesegingerpork01.jpg",
-      "japanesegingerpork01.jpg","japanesegingerpork01.jpg"],
+      image: [
+        "japanesegingerpork01.jpg",
+        "japanesegingerpork01.jpg",
+        "japanesegingerpork01.jpg",
+        "japanesegingerpork01.jpg",
+      ],
       TypesDeplat: "Entrée",
       Rate: 3,
       price: 70,
     },
     {
-      id:6,
+      id: 6,
       Catgories: "Mexicain",
       Address: "azdadz",
       Name: "Chilaquiles",
       TypesDeplat: "Plat",
-      image: ["Chilaquiles.jpg","Chilaquiles.jpg"],
+      image: ["Chilaquiles.jpg", "Chilaquiles.jpg"],
       Rate: 2,
       price: 50,
     },
     {
-      id:7,
+      id: 7,
       Catgories: "Italien",
       Address: "azdadz",
       Préférences: "Pizza",
       Name: "Pizza",
-      image: ["Pizaaimage.jpg","Pizaaimage.jpg","Pizaaimage.jpg","Pizaaimage.jpg"],
+      image: [
+        "Pizaaimage.jpg",
+        "Pizaaimage.jpg",
+        "Pizaaimage.jpg",
+        "Pizaaimage.jpg",
+      ],
       TypesDeplat: "Plat",
       Rate: 3,
       price: 50,
     },
     {
-      id:8,
+      id: 8,
       Catgories: "Italien",
       Address: "azdadz",
       Préférences: "Pizza",
       Name: "Pizza",
-      image: ["Pizaaimage.jpg","Pizaaimage.jpg","Pizaaimage.jpg"],
+      image: ["Pizaaimage.jpg", "Pizaaimage.jpg", "Pizaaimage.jpg"],
       TypesDeplat: "Plat",
       Rate: 5,
       price: 50,
     },
     {
-      id:9,
+      id: 9,
       Catgories: "Américain",
       Address: "azdadz",
       Préférences: "Pizza",
       Name: "Pizza",
-      image: ["Pizaaimage.jpg","Pizaaimage.jpg","Pizaaimage.jpg"],
+      image: ["Pizaaimage.jpg", "Pizaaimage.jpg", "Pizaaimage.jpg"],
       TypesDeplat: "Plat",
       Rate: 4,
       price: 50,
@@ -352,13 +367,10 @@ const FullinformationProduct = ({
       )}
       <div className="BackgroundimageFullimage008 ">
         <Container>
-          <div
-            className="flex text-5xl	PaddinngDatitedProductName 	justify-center"
-          >
+          <div className="flex text-5xl	PaddinngDatitedProductName 	justify-center">
             <div>
               {console.log(match)}
               <p>{match.token}</p>
-          
             </div>
           </div>
         </Container>
@@ -382,21 +394,20 @@ const FullinformationProduct = ({
         </div>
       </Container>
 
-
       {/* GalxyFold */}
       <div className=" DisplayOnlyIngalxyFold ">
-          {ProductAll.filter((el) => el.id == match.i0d).map((el, i) => (
-            <FullinformationProductMap
-              setNumber02={setNumber02}
-              Number={Number}
-              setNumber={setNumber}
-              setOpenModal={setOpenModal}
-              Rate02={Rate02}
-              el={el}
-              i={i}
-            />
-          ))}
-        </div>
+        {ProductAll.filter((el) => el.id == match.i0d).map((el, i) => (
+          <FullinformationProductMap
+            setNumber02={setNumber02}
+            Number={Number}
+            setNumber={setNumber}
+            setOpenModal={setOpenModal}
+            Rate02={Rate02}
+            el={el}
+            i={i}
+          />
+        ))}
+      </div>
     </div>
   );
 };

@@ -8,6 +8,7 @@ import {
   AppBar,
   Button,
   Input,
+  Link,
 } from "@material-ui/core";
 import SearchIcon from "@material-ui/icons/Search";
 import MenuIcon from "@material-ui/icons/Menu";
@@ -16,6 +17,7 @@ import purple from "@material-ui/core/colors/purple";
 
 const Main02 = ({ Scrol }) => {
   const [MenuTogel, SetMenuTogel] = useState(true);
+  const[Input02 , setInput02]=useState()
   const theme = createTheme({
     palette: {
       primary: {
@@ -153,11 +155,15 @@ const Main02 = ({ Scrol }) => {
             {/* Input Rechere Food */}
             <Container>
               <div className="flex justify-center mt-5  ">
+              {/* <Link to={`/product/${Input02}`}> */}
                 <div className="absolute  mt-4 justify-center ml-590 displaynoneimage">
-                  <SearchIcon className="fontSized" />
+              <a href={`/product/${Input02}`}> <SearchIcon onClick={()=>console.log("wissem")} className="fontSized" /></a> 
                 </div>
+                
                 <div className="flex SousCatgoryTest  displaynoneNavbarResposive03 ">
                   <input
+                   value={Input02}
+                    onChange={(e)=>setInput02(e.target.value)}
                     style={{ height: "10px" }}
                     placeholder="Your Addres or postal code"
                     className="font-bold  pl-10	paddingResposive08  pb-4 rounded-full mt-2 widhtResposiveNavbar"

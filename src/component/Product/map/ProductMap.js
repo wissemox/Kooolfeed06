@@ -5,21 +5,18 @@ import StarIcon from "@material-ui/icons/Star";
 import { Link } from "react-router-dom";
 const ProductMap = ({ el }) => {
   return (
-    <div  className="ml-8 ">
+    <div className="ml-8 ">
       <Link to={`/FullinformationProduct/${el.Name}/${el.id}`}>
-      <div>
-      <div
-        className="absolute rounded-3xl hoverimageAnimation01 widhtHeagithResposiveProduct"
-        style={{
-          backgroundColor: "black",
+        <div>
+          <div
+            className="absolute rounded-3xl hoverimageAnimation01 widhtHeagithResposiveProduct"
+            style={{
+              backgroundColor: "black",
 
-          opacity: "25%",
-        }}
-      
-      > 
-       </div>
-      
-      </div>
+              opacity: "25%",
+            }}
+          ></div>
+        </div>
       </Link>
       <div className="absolute  rounded-3xl  flex">
         <div className="font-medium	">

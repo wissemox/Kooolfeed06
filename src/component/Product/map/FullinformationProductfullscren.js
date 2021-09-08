@@ -13,10 +13,10 @@ const FullinformationProductfullscren = ({ el, Number02, setNumber02 }) => {
        */}
 
       <NavigateNextIcon
-      className="marginTopResposiveNavigteNextIcon"
+        className="marginTopResposiveNavigteNextIcon"
         style={{
           transform: "rotate(180deg)",
-         
+
           fontSize: "60px",
         }}
         onClick={() => setNumber02(Number02--)}
@@ -27,8 +27,8 @@ const FullinformationProductfullscren = ({ el, Number02, setNumber02 }) => {
       />
       {/* {el.image[3] ? <p>Jawk bahi</p> : <p>JaWKMOCHBAHI</p>} */}
       <NavigateNextIcon
-      className="marginTopResposiveNavigteNextIcon"
-        style={{ fontSize: "60px"}}
+        className="marginTopResposiveNavigteNextIcon"
+        style={{ fontSize: "60px" }}
         onClick={() => setNumber02(Number02++)}
       ></NavigateNextIcon>
     </div>

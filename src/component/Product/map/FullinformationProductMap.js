@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import FacebookIcon from "@material-ui/icons/Facebook";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 const FullinformationProductMap = ({
   el,
   Rate02,
@@ -55,7 +55,7 @@ const FullinformationProductMap = ({
           </p>
         </div>
 
-        <div  className="flex mt-6 widht100PresntageAddcart">
+        <div className="flex mt-6 widht100PresntageAddcart">
           <div style={{ backgroundColor: "#F6F6F6" }} className="p-3 flex">
             <button
               className="pr-3 font-bold		"
@@ -73,19 +73,19 @@ const FullinformationProductMap = ({
               +
             </button>
           </div>
-       
+
           <div
             className="text-white fontSizeAddCart text-center	pt-3 ml-2"
             style={{ backgroundColor: "#FA663C", width: "150px" }}
           >
-               <Link to="/Panier">
-            <p>ADD TO CART</p>
+            <Link to="/Panier">
+              <p>ADD TO CART</p>
             </Link>
           </div>
 
           <div
             className="ml-2 pt-3 flex justify-center	 widhtPrestageDatited10pr"
-            style={{ backgroundColor: "#F6F6F6"  }}
+            style={{ backgroundColor: "#F6F6F6" }}
           >
             <FavoriteBorderIcon />
           </div>
@@ -114,7 +114,6 @@ const FullinformationProductMap = ({
             <img
               onClick={() => NumerSterImage(el, i)}
               className="DaitedProductResposiveWithHeaight MarginRightResposivePrestage30"
-              
               src={process.env.PUBLIC_URL + `/${el}`}
             />
           ))}

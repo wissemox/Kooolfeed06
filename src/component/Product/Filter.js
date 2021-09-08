@@ -80,7 +80,7 @@ const Filter = ({
     <div style={{ marginTop: "20px" }} className="sticky top-5 ">
       {console.log(Préférences03)}
       <div style={{ marginLeft: "140px" }}>
-        <div   style={{ color: "#565656" }}>
+        <div style={{ color: "#565656" }}>
           <RadioGroup value={Delivery} onChange={handleChange02}>
             <MuiThemeProvider theme={theme}>
               <div>
@@ -175,7 +175,10 @@ const Filter = ({
             </div>
           </div>
           {Préférences01 && (
-            <div    style={{ color: "#565656" }} className="TestANimationclick01 mt-4">
+            <div
+              style={{ color: "#565656" }}
+              className="TestANimationclick01 mt-4"
+            >
               <RadioGroup
                 aria-label="gender"
                 name="gender1"
@@ -262,7 +265,10 @@ const Filter = ({
           </div>
           {RateTrue && (
             <div className="classes.root">
-              <div style={{color:"#FA663C"}} className="TestANimationclick01 mt-4">
+              <div
+                style={{ color: "#FA663C" }}
+                className="TestANimationclick01 mt-4"
+              >
                 <Rate0 Rate={Rate} setRate={setRate} />
                 <div className="flex justify-center	">
                   <div>
